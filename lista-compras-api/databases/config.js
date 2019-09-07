@@ -4,14 +4,16 @@ const config = {
         user: 'dev',
         password: 'senha123',
         host: 'localhost',
-        dialect: 'postgres'
+        dialect: 'postgres',
+        port: 5432
     },
     'test': {
         db: 'lista_compras_test',
         user: 'dev',
         password: 'senha123',
         host: 'localhost',
-        dialect: 'postgres'
+        dialect: 'postgres',
+        port: 5432
     }
 };
 
