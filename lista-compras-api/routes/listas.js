@@ -21,4 +21,10 @@ router.get('/', listaCtrl.recuperarTodas);
  */
 router.post('/', listaCtrl.salvar);
 
+/**
+ * Rota para o serviço: /listas/itens
+ * Verbo HTTP: GET
+ */
+router.get('/itens', listaCtrl.recuperarItensPorDescricao);
+
 module.exports = router;
