@@ -401,4 +401,15 @@ const itens = [
     }
 ];
 
+require('./db');
+const Item = require('../models/Item');
+
+Item
+    .insertMany(
+        itens,
+        (erro, itensSalvos) => console.log('Itens salvos')
+    );
+
+
+
 
